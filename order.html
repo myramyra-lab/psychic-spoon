@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Order</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>Sneakers</li>
+                <li><a href="heels.html">Heels</a></li>
+                <li>Boots</li>
+            </ul>  
+        </div>
+        <div class="topbar">
+            <p class="text-align-center">FIT Shoes</p>
+            <p class="cart"><a href="cart.html">My Cart</a></p>
+            <img src="images/flat-design-shopping-cart-vector-13576287.jpg" alt="">
+        </div>
+        <div id="content">
+            <h1>Your Order</h1>
+            <table id="checkout-cart" class="shopping-cart">
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="pricing">
+                <p id="shipping">
+                    <strong>Shipping</strong>:<span id="sshipping"></span>
+                </p>
+                <p id="sub-total">
+                    <strong>Total</strong>:<span id="stotal"></span>
+                </p>
+            </div>
+            <div id="user-details">
+                <h2>Your Data</h2>
+                    <div id="user-details-content"></div>
+            </div>
+            <form action="" id="paypal-form" method="post">
+                <input type="hidden" name="cmd" value="_cart">
+                <input type="hidden" name="upload" value="1">
+                <input type="hidden" name="business" value="">
+                <input type="hidden" name="currency_code" value="">
+                <input type="submit" id="paypal-btn" class="btn" value="Pay with Paypal">
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/scripts.js"></script>  
+</body>
+</html>
