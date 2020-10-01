@@ -1,0 +1,19 @@
+{"shoes":[
+    {
+     "item": "black-shoe",
+     "price": 2000
+    },
+    {
+        "item": "white-shoe",
+        "price": 2000
+    },
+    {
+        "item": "orange-shoe",
+        "price": 2000
+    },
+    {
+        "item": "more-shoes",
+        "price": 2000
+    }
+]
+}
