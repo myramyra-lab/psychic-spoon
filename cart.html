@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <title>Cart</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li>Sneakers</li>
+                <li><a href="heels.html">Heels</a></li>
+                <li>Boots</li>
+            </ul>  
+        </div>
+        <div class="topbar">
+            <p class="text-align-center">FIT Shoes</p>
+            <img src="images/flat-design-shopping-cart-vector-13576287.jpg" alt="">
+        </div>
+        <div class="content">
+            <form id="shopping-cart" action="cart.html" method="post">
+                <table class="shopping-cart">
+                    <thead>
+                        <tr>
+                            <th scope="col">Item</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <p id="sub-total">
+                    <strong>Sub-Total</strong>:<span id="stotals"></span>
+                </p>
+                <ul id="cart-actions">
+                    <li>
+                        <input type="submit" id="update-cart" name="update" class="btn btn-success" value="update-cart"> 
+                    </li>
+                    <br>
+                    <li>
+                        <input type="submit" id="empty-cart" name="delete" class="btn btn-danger" value="empty-cart"> 
+                    </li>
+                    <br>
+                    <li>
+                        <a href="heels.html" class="btn btn-warning">Continue Shopping</a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="checkout.html" class="btn btn-primary">Go to Checkout</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>                                                
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/scripts.js"></script>
+</body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+</html>
