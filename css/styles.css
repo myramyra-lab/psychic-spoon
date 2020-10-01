@@ -1,0 +1,217 @@
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    position: absolute;
+}
+.sidebar{
+    position: absolute;
+    width: 140px;
+    margin-top: 70px;
+    height: 100%;
+    background-color: orange;
+}
+.topbar{
+    z-index: 1;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    background-color: teal;
+}
+.sidebar li{
+    font-size: 30px;
+}
+.topbar p{
+    font-size: 50px;
+}
+.topbar img {
+    width: 3%;
+    height: 53%;
+    position: absolute;
+    top: 20px;
+    left: 95%;  
+    cursor: pointer;
+}
+.topbar img:before{
+    content: attr(data-count);
+    position: absolute; 
+    color: white;
+    right: 16px; 
+    font-size: 15px;
+    text-align: center; 
+    top: -12px; 
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+.topbar img.zero:before{
+    opacity: 1;
+}
+.topbar .cart {
+    position: absolute;
+    color: black;
+    top: 10px;
+    left: 72%;  
+    cursor: pointer;
+    font-size: 35px;
+}
+.content{
+    position: absolute;
+    margin-left: 150px;
+    top: 80px;
+}
+section{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    /* margin: 100% auto; */
+}
+section div{
+    width: 300px;
+    height: 85%;
+    background:#f5f5f5;
+    padding: 1%;
+    position: relative;
+}
+img{
+    width: 250px;
+    height: 186px;
+}
+h6{
+    width: 50px;
+    font-size: 15px;
+}
+button{
+    padding: 2px;
+    cursor: pointer;
+}
+.add-to-cart{
+    width: 15px;
+}
+.qty{
+    width: 60px;
+}
+section div span {
+     position: absolute;
+     top: 14px;
+     left: 13px;
+     width: 300px;
+     height: 186px;
+    display: none;
+}
+section div span img{
+    width: 100%;
+    height: 100%;
+}
+section div:nth-child(1)>span.active{
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+section div:nth-child(2)>span.active{
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+section div:nth-child(3)>span.active{
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+section div:nth-child(4)>span.active{
+    animation: four 0.5s ease-in;
+    z-index: 2;
+    display: block;
+}
+@keyframes first {
+    to{
+        width: 30px;
+        height: 20px;
+        left: 1100px;
+        top: -70px;
+    }
+}
+@keyframes second {
+    to{
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+@keyframes third {
+    to{
+        width: 30px;
+        height: 50px;
+        left: 565px;
+        top: -70px;
+    }
+}
+@keyframes four {
+    to{
+        width: 30px;
+        height: 50px;
+        left: 250px;
+        top: -70px;
+    }
+}
+.select{
+    width: 60%;
+    height: 500px;
+    padding: 5%;
+    background: #222;
+    position: absolute;
+    top: -1000px;
+    left: 20px;
+    transition: 0.5s;
+    overflow-y: auto; 
+    margin: auto;
+}
+.select.display{
+    top: 10px;
+}
+.select div{
+    width: 105%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    /* margin: 5px auto; */
+}
+.select div img{
+    width: 220px;
+    height: 100%;
+}
+.select div p{
+    padding: 35px;
+    color: white;
+}
+.select div button{
+    position: absolute;
+    left: 39%;
+    top: 75%;
+    color: white;
+}
+.select div h6{
+    position: absolute;
+    left: 42%;
+    top: 55%;
+    color: white;
+}
+.select div span{
+    /* display: none; */
+}
+.select .add-to-cart {
+    width:15px;
+    height: 20px;
+    display: none;
+}
+.shopping-cart{
+
+}
